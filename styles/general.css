@@ -1,4 +1,4 @@
-html, body{
+html{
 	margin: 0;
 	padding: 0;
 	width: 100%;
@@ -7,26 +7,59 @@ html, body{
 main{
 	display: flex;
 	justify-content: center;	
-	padding-top:7em;
+	padding-top:8em;
 /*	background: #fff;*/
 	width: 100%;
 	height: 100%;
+	margin: 0;
+	margin-bottom: 5em;
+}
+body{
+	margin: 0;
+	padding: 0;
+	display: flex;
 }
 #main-center{
 	display: flex;
-	justify-content: center;
+	flex-direction:column;
+	justify-content: flex-start;
 	align-items: center;
 	margin: 0;
 	padding: 0;
-	width: 70%;
-	height: 80%;	
+	width: 90%;
+	height: 100%;
 /*	background: #fcf;*/
 	border-radius: 0.5em;
 }
-#graph-holder{
-	width: 90%;
-	height: 90%;
+.bar-graph-wrapper,.pie-graph-wrapper,
+.scatter-graph-wrapper{
+	display: flex;
+	justify-content: center;
+	flex-wrap:wrap;
+	width: 100%;
 }
+/*.bar-graph-wrapper{
+	height: 30%;	
+}
+.pie-graph-wrapper{
+	height: 40%;
+}
+.scatter-graph-wrapper{
+	height: 35%;
+}*/
+#bar-div{
+	width: 60em;
+	height: 30em;
+}
+#pie-div{
+	width: 20em;
+	height: 10em;
+}
+#scatter-div{
+	width: 100%;
+	height: 100%;
+}
+
 #xml{
 	display: none
 }
@@ -43,6 +76,7 @@ main{
 }
 .nav-link{
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+/*	font-weight: bold;*/
 	text-decoration: none;
 	text-transform: uppercase;
 	color:#000
@@ -60,7 +94,7 @@ main{
 	align-items: center;
 	justify-content: center;
 	height: 3em;
-	width: 6em;
+	width: 14em;
 	background: #fff;
 	text-align: center;
 	border: 1px solid #333;

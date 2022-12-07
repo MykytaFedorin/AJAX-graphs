@@ -8,17 +8,31 @@
 	<title>Grafy</title>
 </head>
 <body onload="sendXMLrequest('../sources/z03.xml', main)">    
-	<header>
-		<div class="header-wrapper">
+	<header class='header-wrapper'>
 			<ul class="nav-ul">
-				<li class="nav-item"><a class="nav-link" href="#">Page 1</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">Hodnotenie</a></li>
 				<li class="nav-item"><a class="nav-link" href="./web/page2.html">Page 2</a></li>
 			</ul>
-		</div>
 	</header>
 	<main>
 		<div id="main-center">
-				<div id='graph-holder'> </div>
+				<p>Bar Graph</p>
+				<div class="bar-graph-wrapper">
+					<div class="graph-holder" id="bar-div"></div>
+				</div>
+				<p>Pie Graph</p>
+				<div class="pie-graph-wrapper">
+					<div class="graph-holder" id="pie-div1"></div>
+					<div class="graph-holder" id="pie-div2"></div>
+					<div class="graph-holder" id="pie-div3"></div>
+					<div class="graph-holder" id="pie-div4"></div>
+					<div class="graph-holder" id="pie-div5"></div>
+					<div class="graph-holder" id="pie-div6"></div>
+				</div>
+				<p>Scatter Graph</p>
+				<div class="scatter-graph-wrapper">
+					<div class="graph-holder" id="scatter-div"></div>
+				</div>
 				<div id="xml"></div>
 		</div>
 	</main>
